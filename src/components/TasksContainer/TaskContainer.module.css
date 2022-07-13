@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+
+
+    width: 100%;
+    max-width: 608px;
+
+    margin-top: 32px;
+}
+
+.taskList {
+    margin: 0px;
+}
+
+.title {
+    margin-top: 32px;
+    margin-bottom: 58px;
+    text-align: center;
+
+    font-family: var(--font-secondary);
+
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.taskCompleted {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteTask {
+    color: #BDBDBD;
+
+    cursor: pointer;
+}
+
+.deleteAllButton {
+
+    margin-left: auto;
+    margin-top: 37px;
+    background-color: var(--background-color-danger);
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    width: fit-content;
+
+    width: 124px;
+    height: 40px;
+
+    cursor: pointer;
+}
+
+.deleteAllButton p {
+    margin: 0;
+    font-family: var(--font-primary);
+
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+.deleteAllLabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .taskList {
+        margin: 0 16px;
+    }
+
+    .deleteAllButton {
+
+
+        margin-top: 18px;
+
+    }
+
+}

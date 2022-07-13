@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    align-items: center;
+
+
+    margin-bottom: 24px;
+}
+
+
+.square {
+    height: 24px;
+    width: 24px;
+
+    border-radius: 4px;
+    color: transparent;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #828282;
+}
+
+.squareUnChecked {
+    background-color: white;
+    color: transparent;
+
+    border: 1px solid #828282;
+}
+
+.squareChecked {
+    background-color: var(--background-color-primary);
+    color: white;
+
+    border: 1px solid var(--background-color-primary);
+}
+
+.label {
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--font-secondary);
+    margin: 0;
+    margin-left: 7px;
+
+}
+
+.taskDone {
+    text-decoration: line-through;
+}
+
+.taskUnDone {
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .square {
+        height: 18px;
+        width: 18px;
+
+        border-radius: 3px;
+
+    }
+
+    .label {
+
+        font-size: 14px;
+
+        margin-left: 5px;
+
+    }
+
+}
