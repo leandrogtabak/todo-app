@@ -84,7 +84,7 @@ const TaskContainer = () => {
             return (
               <div className={styles.taskCompleted}>
                 <CheckBox label={task.task} initialState={task.currentState} key={task.id} id={task.id} currentState={setCurrentState} />
-                <div onClick={deleteItem} id={task.id.toString()} className={styles.deleteTask}>
+                <div key={task.id} onClick={deleteItem} id={task.id.toString()} className={styles.deleteTask}>
                   <DeleteOutlineRounded />
                 </div>
               </div>
