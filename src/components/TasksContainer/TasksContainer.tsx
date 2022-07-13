@@ -82,7 +82,7 @@ const TaskContainer = () => {
         {viewToShow === 'Completed' &&
           tasksListDone.map((task) => {
             return (
-              <div className={styles.taskCompleted}>
+              <div key={task.id} className={styles.taskCompleted}>
                 <CheckBox label={task.task} initialState={task.currentState} key={task.id} id={task.id} currentState={setCurrentState} />
                 <div key={task.id} onClick={deleteItem} id={task.id.toString()} className={styles.deleteTask}>
                   <DeleteOutlineRounded />
